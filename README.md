@@ -1,6 +1,6 @@
-# FOODSITY
+# FUNDRAIL
 
-FoodSity, allows kitchen's to improve their service, offering a platform, which allows students to take control of their own order, in addition to offering solutions such as an interactive buttons that facilitates the ordering process and decision-making when ordering.
+Fundrail is an open source fund raising platform, built to help people that are in in need.
 
 <!-- ## Available Scripts
 
