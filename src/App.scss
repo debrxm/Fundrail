@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./constants/scss/colors";
+@import "./constants/scss/variables";
+@import "./constants/scss/mixins";
+@import "./constants/scss/default";
+@import "./constants/scss/framework";
+@import "./constants/scss/fonts";
+
+.input-seperator {
+  height: 2em;
+}
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  height: 2.5em;
+  border-radius: 3em;
+  box-shadow: $shadow;
+  font-weight: 700;
+  a {
+    font-size: 0.9em;
+    margin: 0;
+    color: $white;
+  }
+}

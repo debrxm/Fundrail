@@ -1,0 +1,62 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.autocomplete {
+  position: relative;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 1em;
+  @include smartphone() {
+    width: 90%;
+  }
+  .autocomplete-input {
+    display: block;
+    width: 100%;
+    height: 2.7em;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 1.2em;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.autocomplete-search-results-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.autocomplete-search-result {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.autocomplete-search-result:hover,
+.autocomplete-search-result:focus,
+.autocomplete-search-result:active {
+  background-color: $white;
+}
+.custom-autocomplete {
+  width: 100%;
+  background-color: $blend;
+  input {
+    background-color: $blend;
+  }
+  .autocomplete-dropdown {
+    background-color: $blend;
+  }
+}

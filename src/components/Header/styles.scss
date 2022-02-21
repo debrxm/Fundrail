@@ -1,0 +1,104 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/default";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.header {
+  height: 9em;
+  padding: 0 5%;
+  @include small-laptop() {
+    display: none !important;
+  }
+  .logo-container {
+    .logo-wrap {
+      height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .logo-text {
+        font-size: 1.6em;
+        color: $accent;
+        line-height: 1em;
+        margin-left: 0.5em;
+        .logo-text-alt {
+          font-family: "PoppinsBold" !important;
+          color: $tint;
+        }
+      }
+    }
+    .logo-icon {
+      height: 100%;
+    }
+  }
+  .navbar {
+    height: 8em;
+    padding: 0 5%;
+    width: 100%;
+    .deliver-to {
+      background-color: $white;
+      padding: 0.8em 1.1em;
+      border-radius: 3em;
+      cursor: pointer;
+      .delivery-location {
+        font-size: 1.2em;
+        .delivery-location-alt {
+          color: $tint;
+          margin-left: 0.5em;
+        }
+      }
+    }
+    .right-nav-links {
+      margin-left: auto;
+    }
+    .nav-link {
+      position: relative;
+      margin-left: 2em;
+      white-space: nowrap;
+      font-size: 1.3em;
+      font-family: "PoppinsMedium" !important;
+      color: $textColor;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $tint;
+      }
+      .cart-item-count {
+        position: absolute;
+        right: -2.3em;
+        top: 0.1em;
+        width: 1.8em;
+        height: 1.8em;
+        box-shadow: $shadow;
+        border-radius: 50%;
+        background-color: $tint;
+        h4 {
+          color: $white;
+          font-size: 1em;
+        }
+      }
+      .cart-icon {
+        height: 2.3em;
+        width: 2.3em;
+        margin-left: 1em;
+      }
+    }
+    .user-prev {
+      margin-left: 1.5em;
+    }
+    .logout-btn {
+      cursor: pointer;
+      padding: 0 2em;
+      height: 2.5em;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: $tint !important;
+      color: $white;
+      border-radius: 0.5em;
+      box-shadow: $shadow;
+      border: 0;
+      margin: 2em auto;
+    }
+  }
+}

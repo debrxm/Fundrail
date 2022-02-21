@@ -1,0 +1,130 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.register {
+  .form-container {
+    width: 40%;
+    padding: 5% 7% 0 7%;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    @include smartphone() {
+      width: 90%;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    .phone-input {
+      height: 3em;
+      width: 12px;
+      border: 0.12em solid grey;
+    }
+    .form {
+      .group {
+        position: relative;
+        z-index: 0;
+        margin: 1em 0;
+        .form-input-label {
+          color: grey;
+          font-size: 1.1em;
+          font-weight: 100;
+          margin-bottom: 0.3em;
+          display: block;
+          font-weight: normal;
+        }
+        .form-input {
+          background: none;
+          background-color: transparent;
+          color: grey;
+          font-size: 1.8em;
+          padding: 0.5em 1em 0.5em 0.5em;
+          display: block;
+          width: 100%;
+          border: none;
+          border-radius: 0.2em;
+          border: 0.12em solid grey;
+        }
+      }
+      .text-area {
+        height: 5em;
+      }
+      .auth-loading {
+        margin: auto;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 0 2em;
+        height: 3em;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: $tint;
+        font-family: "PoppinsMedium";
+        color: $white;
+        border-radius: 0.5em;
+        box-shadow: $shadow;
+        border: 0;
+        margin: 2em auto;
+        @include smartphone() {
+          width: 90%;
+        }
+      }
+      .outline-btn {
+        background-color: transparent;
+        color: $tint;
+        border: 0.2em solid $tint;
+        height: 2.5em;
+        font-size: 1.1em;
+      }
+      .other-info {
+        padding-left: 9em;
+        h2 {
+          font-size: 2.8em;
+          line-height: 3em;
+          color: $linkColor;
+        }
+        p {
+          font-size: 1.2em;
+          margin-bottom: 2em;
+          line-height: 1.5em;
+          color: $linkColor;
+        }
+      }
+    }
+    .alt-text {
+      margin-top: auto;
+      text-align: center;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .group {
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .group .form-input-label {
+    font-size: 1.4em;
+  }
+}
+
+.group .form-input:focus {
+  outline: none;
+}
+
+.group input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+.btn {
+  margin: auto;
+  width: 100%;
+}

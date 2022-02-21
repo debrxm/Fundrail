@@ -1,0 +1,71 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+.dropdown {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  @include smartphone() {
+    width: 90%;
+  }
+}
+
+.dropdown-header {
+  padding: 1em;
+  font-family: "PoppinsMedium";
+  font-size: 1.2em;
+  color: $black;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  max-height: 20em;
+  overflow-y: scroll;
+  padding: 5px;
+  border-top: 1px solid #e5e8ec;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+  background-color: $white;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91a5be;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 13px;
+  color: #91a5be;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+
+.custom-dropdown {
+  width: 100%;
+  background-color: $blend;
+}

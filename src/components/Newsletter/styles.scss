@@ -1,0 +1,78 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.newsletter {
+  background-color: $tint;
+  padding: 10em 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @include smartphone() {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-text-content {
+    @include smartphone() {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    h2 {
+      font-size: 2.2em;
+      font-family: "PoppinsMedium";
+      color: $white;
+      margin-bottom: 0.4em;
+    }
+    p {
+      font-size: 1.2em;
+      color: $white;
+    }
+  }
+  .newsletter-input-group {
+    display: flex;
+    align-items: center;
+    @include smartphone() {
+      flex-direction: column;
+      align-items: center;
+    }
+    .newsletter-btn {
+      @include smartphone() {
+        display: inline-flex;
+      }
+    }
+  }
+  input {
+    background: none;
+    background-color: $white;
+    color: $textColor;
+    font-family: "PoppinsMedium";
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    padding: 0.8em 0 0.8em 0.5em;
+    border: none;
+    outline: none;
+    height: 3em;
+  }
+  .newsletter-btn {
+    cursor: pointer;
+    padding: 0 2em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $accent;
+    letter-spacing: 0.2em;
+    color: $white;
+    border-radius: 0.5em;
+    box-shadow: $shadow;
+    font-family: "PoppinsSemiBold" !important;
+    // font-weight: 500 !important;
+    border: 0;
+    @include smartphone() {
+      margin: auto;
+      margin-top: 1em;
+    }
+  }
+}

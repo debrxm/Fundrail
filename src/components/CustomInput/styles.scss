@@ -1,0 +1,26 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.group {
+  display: flex;
+  flex-direction: column;
+  .form-input {
+    background: none;
+    background-color: $white;
+    color: $textColor;
+    font-size: 1.5em;
+    font-family: "PoppinsMedium";
+    border-radius: 0.5em;
+    padding: 1em 0 1em 0.5em;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  .form-input-label {
+    color: $black;
+    font-size: 1.2em;
+    margin-left: 0.2em;
+    margin-bottom: 0.5em;
+  }
+}

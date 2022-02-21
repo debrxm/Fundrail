@@ -1,0 +1,29 @@
+@import "../../constants/scss/colors";
+@import "../../constants/scss/variables";
+@import "../../constants/scss/mixins";
+
+.pay-now-btn {
+  cursor: pointer;
+  padding: 0 2em;
+  width: 100%;
+  height: 2.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $tint;
+  color: $white;
+  border-radius: 0.5em;
+  box-shadow: $shadow;
+  font-family: "PoppinsMedium" !important;
+  border: 0;
+  white-space: nowrap;
+  &:hover {
+    background-color: $blend;
+    color: $tint;
+  }
+  @include tablet() {
+    margin: auto;
+    margin-top: 1em;
+  }
+}

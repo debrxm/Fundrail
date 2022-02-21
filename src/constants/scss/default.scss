@@ -1,0 +1,113 @@
+@import "./fonts";
+@import "./colors";
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  font-size: 10px;
+  background-color: var(--primaryColor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+label,
+li,
+img {
+  font-weight: 300;
+  list-style: none;
+  font-family: "PoppinsMedium";
+  color: $textColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PoppinsBold";
+  line-height: 1.5;
+}
+p {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #adadad;
+  font-family: "PoppinsMedium";
+}
+
+h1 {
+  font-size: 5.6em;
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 4.48em;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 1.7em;
+}
+h4 {
+  font-size: 1.2em;
+  letter-spacing: 0.6px;
+}
+h5 {
+  font-size: 1.1em;
+}
+h6 {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+a,
+button {
+  font-family: "PoppinsBold";
+  display: inline-block;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.3s;
+  border: none;
+}
+a {
+  font-family: "PoppinsMedium";
+  font-size: 1.2em;
+}
+.btn {
+  cursor: pointer;
+  padding: 0 2em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $danger;
+  color: $white;
+  border-radius: 0.5em;
+  box-shadow: $shadow;
+  font-weight: 700 !important;
+  border: 0;
+}
+.cta {
+  padding: 0 2em;
+  height: 3.5em;
+  width: 13em;
+  font-size: 1.2em;
+  box-shadow: $shadow;
+}
+.cta img {
+  height: 0.8em;
+  width: 0.8em;
+  margin-left: 0.8em;
+}
